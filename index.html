@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/813ef829b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Nav Top Bar Start -->
+        <div class="top-nav">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="brands">
+                <p>BRANDS</p>
+            </div>
+            <div class="srch">
+                <button class="srch-btn">
+                    <i class="fa-solid fa-magnifying-glass srch-icon" ></i>
+                    <input type="text" placeholder="Search for Products, Brands.... ">
+                </button>
+               
+            </div>
+            <div class="wishlist">
+                <button class="wish-btn">WISHLIST</button>
+            </div>
+            <div class="login">
+                <button class="log-btn">LOGIN</button>
+            </div>
+            <div class="bag">
+                <button class="bag-btn"> <i class="fa-solid fa-bag-shopping bag-icon"></i> BAG <span class="zero ">0</span></button>
+            </div> 
+        </div>
+        <div class="hr"><hr></div>
+    <!-- Nav Top Bar End -->
+     <!-- Nav Bar Menu Start-->
+        <div class="menu">
+                <li class="make-up">
+                    <a href="#">Makeup</a>
+                    <!-- <div class="makeup-drp">
+                        <li>
+                            <a href="#">FACE</a>
+                        </li>
+                        <li>
+                            <a href="#">EYES</a>
+                        </li>
+                        <li>
+                            <a href="#">LIPS</a>
+                        </li>
+                        <li>
+                            <a href="#">NAILS</a>
+                        </li>
+                        <li>
+                            <a href="#">TOOLS & BRUSHES</a>
+                        </li>
+                        <li>
+                            <a href="#">TOP BRANDS</a>
+                        </li>
+                    </div> -->
+                </li>
+                <li>
+                    <a href="#">Skin</a>
+                </li>
+                <li>
+                    <a href="#">Hair</a>
+                </li>
+                <li>
+                    <a href="#">Personal care</a>
+                </li>
+                <li>
+                    <a href="#">Mom & Baby</a>
+                </li>
+                <li>
+                    <a href="#">Fragrance</a>
+                </li>
+                <button class="under-btn">UNDERGARMENTS</button>
+                <button class="anni-btn">Anniversary Sale 2024</button>
+                <button class="buy-btn">BUY 1 GET 1</button>
+                <button class="clear-btn">CLEARANCE SALE</button>
+                <button class="men-btn">MEN</button>
+        </div>
+     <!-- Nav Bar Menu End-->
+      <!-- Slideshow Start -->
+        <div class="slide-container">
+            <div class="slide-img">
+                <img src="images/slide img/1.png" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="images/slide img/2.png" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="images/slide img/3.png" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="images/slide img/4.png" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="images/slide img/5.png" alt="">
+            </div>
+        </div>
+        <div class="total-dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      <!-- Slideshow End -->
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("slide-img");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+/* Nav Top Bar Start */
+.top-nav {
+    background-color: #ffffff;
+    display: flex;
+}
+.logo {
+    margin-top: 11px;
+    margin-left: 120px;
+}
+.logo img {
+    height: 22px;
+    width: 168px;
+}
+.brands {
+    margin-left: 50px;
+    margin-top: 0px;
+}
+.brands p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.srch {
+    margin-left: 100px;
+}
+.srch-btn {
+    background-color: #f5f5f5;
+    width: 390px;
+    height: 36px;
+    border: 1px solid rgb(255, 61, 113);
+    border-radius: 20px;
+    margin-top: 2px;
+}
+.srch-icon {
+    margin-left: -130px;
+    text-align: center;
+}
+input {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 5px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 200px;
+
+}
+.wishlist {
+    margin-left: 80px;
+}
+.wish-btn {
+    width: 94px;
+    background-color: #192038;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+.login {
+    margin-left: 20px;
+}
+.log-btn {
+    border: none;
+    background-color: #f5f5f5;
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.log-btn:hover {
+    color: rgb(255, 61, 113);
+}
+.bag {
+    margin-left: 20px;
+}
+.bag-btn {
+    border: none;
+    width: 108px;
+    padding: 12px 18px;
+    background-color: rgb(255, 61, 113);
+    color: #ffffff;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+.bag-btn .bag-icon {
+    margin-left: -30px;
+    margin: 0px 8px 0px 0px;
+}
+.zero {
+    background-color: #f5f5f5;
+    color: rgb(255, 61, 113);
+    padding: 3px 6px ;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+.hr {
+    margin: -6px 235px 0px 120px;
+}
+hr {
+    color: inherit;
+}
+.menu {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 0 15%;
+    margin-top: 20px;
+    margin-left: -105px;
+    
+}
+li {
+    list-style: none;
+   
+}
+li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+li a:hover {
+    color: rgb(255, 61, 113);
+}
+.make-up a{
+    display: block;
+}
+.makeup-drp li a{
+    display: flex;
+}
+.under-btn {
+    border: none;
+    background-color: #225CE4;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 12px 15px 8px 10px;
+    text-align: center;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.anni-btn {
+    border: none;
+    background-color: #F54BE6;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px 15px 8px 10px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.buy-btn {
+    border: none;
+    background-color: #B047C9;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px ;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.clear-btn {
+    border: none;
+    background-color: #09B5B5;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.men-btn {
+    border: none;
+    background-color: #09B566;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+/* Nav Top Bar End *
+/* Slideshow Start */
+.slide-container {
+    margin-top: 12px;
+    width: 100%;
+    position: relative;
+}
+.slide-img img {
+    width: 100%;
+}
+.slide-img {
+    display: none;
+}
+.total-dot {
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-color: #58595B;
+    border-radius: 50%;
+    padding: 1px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: rgb(255, 61, 113);
+}
+.slide-img {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes slide-img {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Slideshow End */
