@@ -271,3 +271,21 @@ li a:hover {
     height: 167px;
     width: 381px;
 }
+.Beautyproduct-pra {
+    font-size: 12px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+.beauty-product {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 160px;
+    margin-right: 160px;
+    row-gap: 10px;
+    column-gap: 2px;
+}
+.bprdct-img img {
+    height: 282.8px;
+    width: 282.8px;
+}
