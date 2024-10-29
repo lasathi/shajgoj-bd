@@ -231,6 +231,7 @@ li a:hover {
 .banner {
     margin-top: 10px;
     margin-left: 160px;
+    margin-right: 160px;
 }
 .banner img {
     height: 122px;
@@ -288,4 +289,41 @@ li a:hover {
 .bprdct-img img {
     height: 282.8px;
     width: 282.8px;
+}
+.shopconcern-pra {
+    font-size: 12px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+.shop-concern {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-left: 160px;
+    margin-right: 160px;
+    row-gap: 10px;
+    column-gap: 2px;
+}
+.concern-img img {
+    height: 223.84px;
+    width: 223.84px;
+}
+.banner-2 {
+    margin-top: 45px;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+.banner-2 img {
+    height: 280px;
+    width: 1168px;
+}
+.banner-3 {
+    background-color: #6B21A8;
+    margin-top: 45px;
+    /* margin-left: 160px;
+    margin-right: 160px; */
+}
+.banner-3 img {
+    height: 150px;
+    width: 100%;
 }
