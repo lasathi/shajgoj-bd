@@ -205,6 +205,7 @@ li a:hover {
     cursor: pointer;
     width: 10px;
     height: 10px;
+    margin: 5px;
     background-color: #58595B;
     border-radius: 50%;
     padding: 1px;
@@ -227,3 +228,46 @@ li a:hover {
     }
 }
 /* Slideshow End */
+.banner {
+    margin-top: 10px;
+    margin-left: 160px;
+}
+.banner img {
+    height: 122px;
+    width: 1167px;
+}
+.deal-pra {
+    font-size: 12px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+.deals {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 160px;
+    margin-right: 160px;
+    row-gap: 1px;
+}
+.deal-img img {
+    height: 282px;
+    width: 282px;
+}
+.topbrands-pra {
+    font-size: 12px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+.top-brands {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 160px;
+    margin-right: 160px;
+    row-gap: 10px;
+    column-gap: 2px;
+}
+.brnd-img img {
+    height: 167px;
+    width: 381px;
+}
